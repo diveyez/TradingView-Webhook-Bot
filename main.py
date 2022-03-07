@@ -16,8 +16,7 @@ app = Flask(__name__)
 
 
 def get_timestamp():
-    timestamp = time.strftime("%Y-%m-%d %X")
-    return timestamp
+    return time.strftime("%Y-%m-%d %X")
 
 
 @app.route("/webhook", methods=["POST"])
